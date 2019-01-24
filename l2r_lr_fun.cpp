@@ -3,7 +3,7 @@
 //
 
 #include "l2r_lr_fun.h"
-
+//test
 double l2r_lr_fun::fun(double *w) {
 	int i;
 	double f=0; //损失函数的值
