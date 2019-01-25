@@ -24,9 +24,9 @@ public:
 private:
 	void Xv(double *v, double * Xv);
 	void XTv(double* v, double * XTv);
-	double * C;
-	double * z;
-	double * D;
+	double * C; //惩罚因子，可以为每个样本设定一个独立的惩罚
+	double * z; //临时变量，用于存储wTx
+	double * D; //临时变量，存储logistic函数的导数，来计算Hessian矩阵
 	const problem * prob;
 };
 
